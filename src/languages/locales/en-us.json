@@ -1,0 +1,7 @@
+{
+  "previewBar.header" : "Preview",
+  "previewBar.button" : "Preview Form",
+  "toolbox.header" : "HTML Elements",
+  "toolbox.element.text-input.title" : "Text Input",
+  "formContainer.place-holder" : "Drag Elements here to build form."
+}

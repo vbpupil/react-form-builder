@@ -1,0 +1,74 @@
+body {
+    margin-top: 1.5rem;
+}
+
+.preview-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.preview-title {
+    font-weight: bold;
+    margin-top: .5rem;
+}
+
+.preview-btn {
+}
+
+.toolbox-wrapper {
+    text-align: center;
+}
+
+.toolbox-elements li {
+    cursor: pointer;
+    list-style: none;
+    margin: 5px;
+    padding: 10px;
+    border: 1px dashed #ddd;
+}
+
+.form-container-wrapper {
+    border: 1px solid #ddd;
+    background: #fafafa;
+    padding: 10px;
+    box-shadow: 0 0 2px 1px rgb(0 0 0 / 10%);
+    min-height: 750px;
+    width: 100%;
+}
+
+.form-container-place-holder div.dropzone{
+    background: white;
+    margin: 1rem;
+    border: .12rem dashed #bbb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: .2rem;
+    padding: 1.5rem;
+    text-align: center;
+    font: 1.8rem bold, "Vollkorn";
+    color: #bbb;
+}
+
+.form-container-place-holder ul{
+    padding:0;
+}
+
+.form-container-place-holder li.form-element{
+    background: white;
+    margin: 1rem;
+    border: .12rem dashed #bbb;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: .2rem;
+    padding: 1.5rem;
+    font: 1.8rem bold, "Vollkorn";
+    color: #bbb;
+    list-style: none;
+}
+
+.form-element-label{
+    font-size: 1rem;
+    color: #444444;
+}
