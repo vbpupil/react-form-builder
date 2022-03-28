@@ -6,7 +6,7 @@ import {FormContainerProps, HtmlElementProps} from "../../types";
 
 export default function FormContainer(props: FormContainerProps) {
     const [formElements, setFormElements] = useState([
-        {id: 'text-input', title: 'Text Input', icon: 'fas fa-font', draggable: true},
+        {id: 'text_input', title: 'Text Input', icon: 'fas fa-font', draggable: true, type: 'Text Input'},
     ]);
 
     const [{isOver}, drop] = useDrop(() => ({
@@ -24,12 +24,12 @@ export default function FormContainer(props: FormContainerProps) {
     };
 
     return (
-        <div className="form-container-wrapper">
-            <div className="form-container-place-holder" ref={drop}>
+        <div className="form-container-wrapper" ref={drop}>
+            <div className="form-container-place-holder">
                 <div>
-                    {formElements.length > 0 ?
+                    { formElements.length > 0 ?
                         <ul>
-                            {formElements.map(element=> <FormElement id={element.id}/>)}
+                            {formElements.map((element, index)=> <FormElement {...element} id={element.id +'_'+ index}/>)}
                         </ul>
                         :
                         <div className="dropzone">

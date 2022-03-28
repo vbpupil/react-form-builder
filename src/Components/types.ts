@@ -3,18 +3,8 @@ export interface HtmlElementProps {
     icon: string;
     title: string;
     draggable: boolean;
+    type: string;
 };
-
-export interface ToolBoxProps {
-    elements: ToolBoxElements[]
-};
-
-export interface ToolBoxElements {
-    id: string;
-    title: string;
-    icon: string;
-    draggable: boolean;
-}
 
 export interface ToolBoxElementProps {
     id: string;
@@ -27,6 +17,9 @@ export interface FormContainerProps{
     elements: HtmlElementProps[]
 };
 
-export interface FormElementProps{
-    id: string;
+export interface FormElementProps extends HtmlElementProps{
+};
+
+export interface ToolBoxProps {
+    elements: HtmlElementProps[]
 };

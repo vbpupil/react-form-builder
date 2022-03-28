@@ -6,9 +6,9 @@ import './style.css';
 import {HtmlElementProps} from './Components/types'
 
 const htmlElements: HtmlElementProps[] = [
-    {id: 'text-input', title: 'Text Input', icon: 'fas fa-font', draggable: true},
-    {id: 'select-box', title: 'Select Box', icon: 'far fa-caret-square-down', draggable: true},
-    {id: 'check-box', title: 'Check Box', icon: 'far fa-check-square', draggable: true},
+    {id: 'text_input', title: 'Text Input', icon: 'fas fa-font', draggable: true, type: 'Text Input'},
+    {id: 'select_box', title: 'Select Box', icon: 'far fa-caret-square-down', draggable: true, type: 'Select Box'},
+    {id: 'check_box', title: 'Check Box', icon: 'far fa-check-square', draggable: true, type: 'Check Box'},
 ];
 
 export default function App() {

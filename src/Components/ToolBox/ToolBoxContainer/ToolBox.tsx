@@ -20,6 +20,6 @@ export default function ToolBox(props: ToolBoxProps) {
 
 ToolBox.defaultProps = {
     elements: [
-        {id: 'text-input', title: 'Text Input', icon: 'fas fa-font', draggable: true},
+        {id: 'text_input', title: 'Text Input', icon: 'fas fa-font', draggable: true, type: 'Text Input'},
     ]
 }
